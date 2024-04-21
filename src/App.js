@@ -2,24 +2,19 @@
 import './App.css';
 import  Teams  from "./components/Teams";
 import Captain from './components/Captain';
+import { useState } from 'react';
 
 function App() {
+
+  // const[count, setCount] = useState(0)
+    let count =0;
+  function updatecount(){
+     count = count+1;
+  }
   return (
     <div>
-
-       <Teams name = "Mumbai Indians"></Teams>
-       <Captain captainName = "Rohit Sharma"></Captain>
-
-       <Teams name = "Royal Challengers Banglore"></Teams>
-       <Captain captainName = " Virat Kohli"></Captain>
-
-       <Teams name = "Chennai Super Kings"></Teams>
-       <Captain captainName = "Mahendra SIngh dhoni"></Captain>
-
-       
-    <div className="App">
-     hello world
-    </div>
+        <p>button click {count} times</p>
+        <button onClick={updatecount}>Click ME</button>
     </div>
    
   );
