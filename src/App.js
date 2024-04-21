@@ -2,14 +2,17 @@
 import './App.css';
 import  Teams  from "./components/Teams";
 import Captain from './components/Captain';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
-  // const[count, setCount] = useState(0)
-    let count =0;
+  const[count, setCount] = useState(0)
+  useEffect(() => {
+    console.log("east or west gdsc is best");
+  })
+
   function updatecount(){
-     count = count+1;
+     setCount(count +1);
   }
   return (
     <div>
