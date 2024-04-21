@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import  Teams  from "./components/Teams";
+import Captain from './components/Captain';
 
 function App() {
   return (
+    <div>
+
+       <Teams name = "Mumbai Indians"></Teams>
+       <Captain captainName = "Rohit Sharma"></Captain>
+
+       <Teams name = "Royal Challengers Banglore"></Teams>
+       <Captain captainName = " Virat Kohli"></Captain>
+
+       <Teams name = "Chennai Super Kings"></Teams>
+       <Captain captainName = "Mahendra SIngh dhoni"></Captain>
+
+       
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     hello world
     </div>
+    </div>
+   
   );
 }
 
